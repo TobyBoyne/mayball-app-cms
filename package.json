@@ -1,5 +1,5 @@
 {
-  "name": "mayball-app-cms",
+  "name": "my-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,20 +9,20 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.12",
     "@strapi/plugin-users-permissions": "4.1.12",
     "@strapi/strapi": "4.1.12",
     "better-sqlite3": "7.4.6",
     "pg": "^8.7.3",
-    "pg-connection-string": "^2.5.0",
-    "yarn": "^1.22.18"
+    "pg-connection-string": "^2.5.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "1931b0fd-cea7-44e3-8dec-551868819fdb"
+    "uuid": "3b9be185-3763-4c1a-b996-3350a27511ce"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
