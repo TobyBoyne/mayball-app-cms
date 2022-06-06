@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elements",
+  "info": {
+    "singularName": "element",
+    "pluralName": "elements",
+    "displayName": "Element",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "area": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::area.area",
+      "inversedBy": "elements"
+    },
+    "shape": {
+      "type": "string",
+      "required": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "datetime",
+      "default": "2022-06-23T17:00:00.000Z"
+    },
+    "endTime": {
+      "type": "datetime",
+      "default": "2022-06-23T22:59:00.000Z"
+    },
+    "onTimeline": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

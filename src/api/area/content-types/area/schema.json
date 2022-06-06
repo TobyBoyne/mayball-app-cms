@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "singularName": "area",
+    "pluralName": "areas",
+    "displayName": "Area",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "elements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::element.element",
+      "mappedBy": "area"
+    },
+    "shape": {
+      "type": "string"
+    },
+    "colour": {
+      "type": "string"
+    }
+  }
+}
