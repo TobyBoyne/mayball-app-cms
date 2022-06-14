@@ -41,6 +41,18 @@
     "onTimeline": {
       "type": "boolean",
       "default": true
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
     }
   }
 }
