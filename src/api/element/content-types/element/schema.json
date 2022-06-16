@@ -53,6 +53,12 @@
     },
     "y": {
       "type": "integer"
+    },
+    "event_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event-type.event-type",
+      "inversedBy": "elements"
     }
   }
 }
